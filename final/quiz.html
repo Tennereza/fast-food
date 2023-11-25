@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food and Health</title>
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="display-4">Fast Food and Health</h1>
+        <p class="lead">Explore the impact of fast food on your well-being.</p>
+    </div>
+
+    <main>
+        <div class="quiz-container">
+            <div class="row" id="question1">
+                <h7><strong>Question 1:</strong> What health issue is often associated with diets high in fast food due to its typically high-calorie content?</h7>
+            </div>
+            <div class="answers">
+                <button class="btn-light" onclick="checkAnswer(1, 'b')">a) Nutrient deficiency</button>
+                <button class="btn-light" onclick="checkAnswer(1, 'b')">b) Weight gain and obesity</button>
+                <button class="btn-light" onclick="checkAnswer(1, 'b')">c) Improved cardiovascular health</button>
+                <button class="btn-light" onclick="checkAnswer(1, 'b')">d) Reduced risk of type 2 diabetes</button>
+            </div>
+            <div class="result" id="quiz-result-1">
+                <div class="result-content" id="result-content-1"></div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="quiz-container">
+            <div class="row">
+                <h7><strong>Question 2:</strong> Which organ may be negatively affected by excessive consumption of fast food, particularly those high in sugars?</h7>
+            </div>
+            <div class="answers">
+                <button class="btn-light" onclick="checkAnswer(2, 'b')">a) Kidneys</button>
+                <button class="btn-light" onclick="checkAnswer(2, 'b')">b) Liver</button>
+                <button class="btn-light" onclick="checkAnswer(2, 'b')">c) Lungs</button>
+                <button class="btn-light" onclick="checkAnswer(2, 'b')">d) Pancreas</button>
+            </div>
+            <div class="result" id="quiz-result-2">
+                <div class="result-content" id="result-content-2"></div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="quiz-container">
+            <div class="row">
+                <h7><strong>Question 3:</strong> What might be a consequence of regular consumption of fast food with high sugar and refined carbohydrates?
+                </h7>
+            </div>
+            <div class="answers">
+                <button class="btn-light" onclick="checkAnswer(3, 'c')">a) Improved mental health</button>
+                <button class="btn-light" onclick="checkAnswer(3, 'c')">b) Reduced risk of cardiovascular diseases</button>
+                <button class="btn-light" onclick="checkAnswer(3, 'c')">c) Increased risk of type 2 diabetes</button>
+                <button class="btn-light" onclick="checkAnswer(3, 'c')">d) Better digestive health</button>
+            </div>
+            <div class="result" id="quiz-result-3">
+                <div class="result-content" id="result-content-3"></div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="quiz-container">
+            <div class="row">
+                <h7><strong>Question 4:</strong> 
+                    What does a lack of fiber in fast food contribute to?                    
+                </h7>
+            </div>
+            <div class="answers">
+                <button class="btn-light" onclick="checkAnswer(4, 'd')">a) Improved gut microbiota</button>
+                <button class="btn-light" onclick="checkAnswer(4, 'd')">b) Weight loss</button>
+                <button class="btn-light" onclick="checkAnswer(4, 'd')">c) Reduced risk of constipation</button>
+                <button class="btn-light" onclick="checkAnswer(4, 'd')">d) Digestive problems like constipation</button>
+            </div>
+            <div class="result" id="quiz-result-4">
+                <div class="result-content" id="result-content-4"></div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="quiz-container">
+            <div class="row">
+                <h7><strong>Question 5:</strong> 
+                    What is a common issue associated with diets high in fast food additives and preservatives?                    
+                </h7>
+            </div>
+            <div class="answers">
+                <button class="btn-light" onclick="checkAnswer(5, 'c')">a) Enhanced nutrient absorption</button>
+                <button class="btn-light" onclick="checkAnswer(5, 'c')">b) Improved immune function</button>
+                <button class="btn-light" onclick="checkAnswer(5, 'c')">c) Potential long-term health implications</button>
+                <button class="btn-light" onclick="checkAnswer(5, 'c')">d) Reduced risk of allergic reactions</button>
+            </div>
+            <div class="result" id="quiz-result-5">
+                <div class="result-content" id="result-content-5"></div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="quiz-container">
+            <div class="row">
+                <h7><strong>Question 6:</strong> 
+                    Which health condition may be linked to diets high in fast food, especially those containing trans fats and sodium?                    
+                </h7>
+            </div>
+            <div class="answers">
+                <button class="btn-light" onclick="checkAnswer(6, 'b')">a) Osteoporosis</button>
+                <button class="btn-light" onclick="checkAnswer(6, 'b')">b) Cardiovascular diseases</button>
+                <button class="btn-light" onclick="checkAnswer(6, 'b')">c) Vitamin C deficiency</button>
+                <button class="btn-light" onclick="checkAnswer(6, 'b')">d) Sleep disorders</button>
+            </div>
+            <div class="result" id="quiz-result-6">
+                <div class="result-content" id="result-content-6"></div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="quiz-container">
+            <div class="row">
+                <h7><strong>Question 7:</strong> 
+                    How might fast food impact mental health, according to some studies?                    
+                </h7>
+            </div>
+            <div class="answers">
+                <button class="btn-light" onclick="checkAnswer(7, 'd')">a) Reduced risk of depression</button>
+                <button class="btn-light" onclick="checkAnswer(7, 'd')">b) Improved cognitive function</button>
+                <button class="btn-light" onclick="checkAnswer(7, 'd')">c) No effect on mental health</button>
+                <button class="btn-light" onclick="checkAnswer(7, 'd')">d) Increased risk of depression</button>
+            </div>
+            <div class="result" id="quiz-result-7">
+                <div class="result-content" id="result-content-7"></div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script>
+        function checkAnswer(questionNumber, correctAnswer) {
+            const selectedAnswer = event.target.textContent.trim();
+            const resultElement = document.getElementById(`quiz-result-${questionNumber}`);
+            const resultContentElement = document.getElementById(`result-content-${questionNumber}`);
+
+            if (selectedAnswer === correctAnswer) {
+                resultContentElement.textContent = 'Correct!';
+            } else {
+                resultContentElement.textContent = 'Incorrect.';
+            }
+
+            resultElement.style.display = 'block';
+        }
+    </script>
+</body>

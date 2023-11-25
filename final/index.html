@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food and Health</title>
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide custom-carousel" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="im1.jpeg" alt="Image 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="im2.jpeg" alt="Image 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="im3.webp" alt="Image 3">
+            </div>
+
+            <div class="carousel-item">
+                <img src="im4.jpeg" alt="Image 4">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Fast Food and Health</h1>
+        <p class="lead">Explore the impact of fast food on your well-being.</p>
+    </div>
+
+    <div id="myCarousel" class="carousel slide custom-carousel" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="im5.jpeg" alt="Image 5">
+            </div>
+
+            <div class="carousel-item">
+                <img src="im6.jpeg" alt="Image 6">
+            </div>
+
+            <div class="carousel-item">
+                <img src="im7.jpeg" alt="Image 7">
+            </div>
+
+            <div class="carousel-item">
+                <img src="im8.jpeg" alt="Image 8">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <br>
+    <div class="text-center">
+        <audio id="myAudio" src="music.mp3"></audio>
+        <button id="playSoundButton" class="btn btn-dark" >Play Sound</button>
+        <button id="stopSoundButton" class="btn btn-dark">Stop Sound</button>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Me</h4>
+                    <p>Zhibek Sharipbayeva</p>
+                    <p>from group: MT-2205</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Information</h4>
+                    <p>Email: 222024@astanait.edu.kz</p>
+                    <p>Phone: +7-777-777-77-71</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Stay Connected</h4>
+                    <p>Follow me on:</p>
+                    <ul class="social-media">
+                        <a href=""><i class="fab fa-facebook"></i></a></li>
+                        <a href=""><i class="fab fa-twitter"></i></a></li>
+                        <a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Subscribe to News</h4>
+                    <p>Stay updated with the latest news and updates. Enter your email below:</p>
+                    <form action="[Your Email Subscription Endpoint]" method="post" class="subscribe-form">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button class="btn btn-dark" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+     
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('myButton').addEventListener('click', function () {
+                alert('Button Clicked!');
+            });
+
+            document.getElementById('myButton').addEventListener('mouseover', function () {
+                console.log('Mouseover Event');
+            });
+
+            document.addEventListener('keypress', function (event) {
+                console.log('Keypress Event - Key Code: ' + event.keyCode);
+            });
+        });
+
+        const audio = document.getElementById('myAudio');
+        const playSoundButton = document.getElementById('playSoundButton');
+        const stopSoundButton = document.getElementById('stopSoundButton');
+
+        function playSound() {
+            audio.play();
+            playSoundButton.disabled = true; 
+            stopSoundButton.disabled = false; 
+        }
+
+        function stopSound() {
+            audio.pause();
+            audio.currentTime = 0; 
+            playSoundButton.disabled = false; 
+            stopSoundButton.disabled = true; 
+        }
+
+        playSoundButton.addEventListener('click', playSound);
+        stopSoundButton.addEventListener('click', stopSound);
+
+        
+    </script>
+</body>
+</html>
